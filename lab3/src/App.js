@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import FavouriteButton from "./components/card/FavouriteButton";
+import CompareButton from "./components/card/CompareButton";
 
 function App() {
   return (
     <div className="result">
         <Task4 markets={markets}/>
+        <div className="notificationContainer" />
     </div>
   );
 }
@@ -36,6 +38,7 @@ function Task4(market)
   const cards = market.markets.map((info) =>
     <div class='card'>
       <FavouriteButton id={info.cost} />
+      <CompareButton title={info.info} />
       <div class='card-image'>
         <a href='#'><img src={info.image} alt={info.info}></img></a>
       </div>
