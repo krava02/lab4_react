@@ -1,0 +1,98 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+a{
+  color: black;
+}
+table {
+  border-collapse: collapse;
+}
+td, th
+{
+  width: 100px;
+  text-align: left;
+}
+table, td, th {
+  border: 1px solid;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+form{
+  width: 100%;
+}
+input{
+  text-align: right;
+}
+input[type=submit]{
+  width: 150px;
+  height: 25px;
+  text-align: center;
+  background: none;
+  border: 1px solid silver;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+}
+.container form{
+  text-align: right;
+}
+.wrapper input{
+  width: 150px;
+  height: 25px;
+  border-left: 1px solid silver;
+  border-right: 1px solid silver;
+  border-bottom: 1px solid silver;
+  border-top: none;
+  cursor: pointer;
+  border-radius: 0 0 4px 4px;
+  background: none;
+}
+.card{
+  border-right: 1px solid silver;
+  border-bottom: 1px solid silver;
+  width: 255px;
+}
+.card h2{
+  position: absolute;
+}
+.card-image{
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  height: 150px;
+}
+.card-information{
+  position: relative;
+  height: 125px;
+  padding: 0 5px 0 5px;
+}
+.card-information h4{
+  height: 45px;
+  overflow: hidden;
+}
+.card-information h4:hover{
+  color: red;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.card-information p{
+  margin-top: 25px;
+}
+.card-information span + p{
+  color: red;;
+}
+.action, .active{
+  position: absolute;
+  top: 50px;
+  font-size: 14px;
+  text-decoration: line-through;
+  color: rgb(121, 121, 121);
+}
+.active{
+  text-decoration: none;
+  top: 95px;
+}
