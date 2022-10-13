@@ -96,3 +96,15 @@ input[type=submit]{
   text-decoration: none;
   top: 95px;
 }
+.notificationContainer {
+  position: fixed;
+  bottom: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.notification {
+  width: 250px;
+  background: lightgreen;
+  color: #777777;
+}
